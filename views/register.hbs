@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node - Login </title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav>
+        Welcome
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="cotainer mt-4">
+        <div class="card">
+            <div class="card-header">
+                Register Form
+            </div>
+            <div class="card-body">
+                <form action="/auth/register" method="POST">
+                    <div class="form-group">
+                        <label for="firstname">name</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname">
+                        <small id="firstname" class="form-text text-muted">Enter Your First Name</small>
+                    </div>
+
+                       <div class="form-group">
+                        <label for="lastname">name</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname">
+                        <small id="lastname" class="form-text text-muted">Enter Your Last Name</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">e-mail</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                        <small id="email" class="form-text text-muted">Enter Your e-mail</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">username</label>
+                        <input type="text" class="form-control" id="usernmae" name="username">
+                        <small id="username" class="form-text text-muted">Enter Username</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                        <small id="password" class="form-text text-muted">Enter Password</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password">confirm password</label>
+                        <input type="password" class="form-control" id="confirm_password" name="confirm_password">
+                        <small id="confirm_password" class="form-text text-muted">Confirm Password</small>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        {{!-- {{#if message }}
+            <h4 class="alert alert danger mt-4"> {{ message }}</h4>
+        {{ /if}} --}}
+    </div>
+
+
+
+    {{!-- <script src="/bootstrap.min.js"></script> --}}
+    <script src="/jquery-3.5.1.min.js"></script>
+    
+</body>
+</html>
